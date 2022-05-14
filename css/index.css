@@ -47,14 +47,12 @@ body {
 
 .form-container {
     background-color: white;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
     border-radius: 15px;
     height: 80vh;
     width: 40vw;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 5px 5px 20px;
 }
 
 .form-container h1 {
@@ -84,12 +82,22 @@ form input {
 
 input[type=text]:focus,
 input[type=password]:focus,
-input[type=email]:focus {
+input[type=email]:focus,
+input[type=date]:focus {
     background-color: #ddd;
 }
 
 #login {
     text-align: center;
+}
+
+#login a{
+    font-weight: 600;
+}
+
+#birthday{
+
+    margin: 10px;
 }
 
 .alertbox {
