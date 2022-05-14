@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
     <title> Registration Portal</title>
 </head>
@@ -13,9 +14,11 @@
 
     <section class="form">
 
+
         <section class="form-container">
 
-            <h1> Create Account </h1><hr>
+            <h1> Registration Page </h1>
+            <hr>
 
             <form>
 
@@ -23,9 +26,14 @@
 
                 <input type="email" id="email" placeholder="Enter your email address" required>
 
-                <input type="password" id="password" placeholder="Enter your password" required>
+                <input type="password" id="password" placeholder="Create a password" required>
 
                 <input type="password" placeholder="Re enter your password" required>
+
+                <label for="birthday" id="birthday"> Enter your birthday </label>
+
+                <input type="date" id="birthday" name="birthday" required>
+
 
                 <button class="btn" type="submit" onclick="validateForm()"> Sign Up </button>
 
@@ -37,7 +45,7 @@
                 </div>
                 <div class="alertbox">
                 </div>
-                
+
             </form>
         </section>
     </section>
@@ -51,24 +59,24 @@
             let password = document.getElementById('password').value;
             let alertBox = document.getElementsByClassName('alertBox').innerHTML;
 
-            if (name.length === 0)  {
+            if (name.length === 0) {
 
                 document.getElementsByClassName('alertbox')[0].innerHTML = `Please enter a proper name`;
                 document.getElementsByClassName('alertbox')[0].style.backgroundColor = '#FFFFE0';
             };
 
             if (email.length === 0) {
-                document.getElementsByClassName('alertbox')[1].innerHTML = `Please enter a proper email`;
+                document.getElementsByClassName('alertbox')[1].innerHTML = `Please enter a proper email address`;
                 document.getElementsByClassName('alertbox')[1].style.backgroundColor = '#FFFFE0';
             };
 
-            if (password.length === 0){
+            if (password.length === 0) {
 
                 document.getElementsByClassName('alertbox')[2].innerHTML = `Please enter a proper password`;
                 document.getElementsByClassName('alertbox')[2].style.backgroundColor = '#FFFFE0';
             }
 
-            else if(password.length <8){
+            else if (password.length < 8) {
                 document.getElementsByClassName('alertbox')[2].innerHTML = `Please enter a longer password`;
                 document.getElementsByClassName('alertbox')[2].style.backgroundColor = '#FFFFE0';
 
