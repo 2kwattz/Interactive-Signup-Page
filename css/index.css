@@ -28,6 +28,7 @@ body {
     background-image:
         linear-gradient(to bottom, #0094e978, #4d837c85),
         url("/img/background.jpg");
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,7 +37,7 @@ body {
 
 .form {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -47,10 +48,9 @@ body {
 .form-container {
     background-color: white;
     border-radius: 15px;
-    height: fit-content;
+    height: fit-content !important;
     width: 40vw;
     padding: 10px;
-    margin: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 5px 5px 20px;
     
@@ -115,7 +115,7 @@ input[type=date]:focus {
 
     .form-container {
         width: 80vw;
-        /* height: 70%; */
+        height: 70%;
     
     }
 
