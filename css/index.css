@@ -101,7 +101,7 @@ input[type=date]:focus {
 }
 
 #login a {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #birthday {
@@ -184,13 +184,3 @@ input[type=date]:focus {
     }
 
 }
-
-/* Media Query for height */
-/* 
-@media (max-height: 600px) {
-    .form-container {
-        height: fit-content;
-        overflow-x: scroll;
-        margin: 30px;
-    }
-} */
