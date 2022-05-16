@@ -24,18 +24,13 @@
     cursor: pointer;
 }
 
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+body{
     background-image:
         linear-gradient(to bottom, #0094e978, #4d837c85),
-        url("./img/background.jpg");
+        url("/img/background.jpg");
     background-size: contain;
     background-position: center;
-    min-height: 100%;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,7 +40,7 @@ body::before {
 
 .form {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -57,7 +52,7 @@ body::before {
     background-color: white;
     border-radius: 15px;
     height: fit-content !important;
-    width: 40vw;
+    width: 50%;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 5px 5px 20px;
@@ -69,7 +64,7 @@ body::before {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
     text-align: center;
-    padding: 2rem;
+    padding: 30px;
     display: block !important;
 }
 
@@ -148,8 +143,10 @@ input[type=date]:focus {
 
     .form-container {
         width: 80vw;
+        
 
     }
+
 }
 
 /* Tablet devices */
@@ -186,12 +183,3 @@ input[type=date]:focus {
 
 }
 
-
-
-/* @media (max-height: 800px) {
-    .form-container {
-        height: fit-content;
-        overflow-x: scroll;
-    
-        margin: 30px;
-    } */
