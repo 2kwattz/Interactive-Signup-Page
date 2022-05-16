@@ -32,7 +32,7 @@ body::before {
     z-index: -1;
     background-image:
         linear-gradient(to bottom, #0094e978, #4d837c85),
-        url("../img/background.jpg");
+        url("/img/background.jpg");
     background-size: contain;
     background-position: center;
     min-height: 100%;
@@ -101,7 +101,7 @@ input[type=date]:focus {
 }
 
 #login a {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #birthday {
@@ -183,4 +183,14 @@ input[type=date]:focus {
         width: 30vw;
     }
 
+}
+
+
+
+@media (max-height: 600px) {
+    .form-container {
+        height: fit-content;
+        overflow-x: scroll;
+        margin: 30px;
+    }
 }
