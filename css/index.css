@@ -61,6 +61,7 @@ body::before {
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 5px 5px 20px;
+    overflow-x: scroll;
 
 }
 
@@ -187,10 +188,10 @@ input[type=date]:focus {
 
 
 
-@media (max-height: 600px) {
+/* @media (max-height: 800px) {
     .form-container {
         height: fit-content;
         overflow-x: scroll;
+    
         margin: 30px;
-    }
-}
+    } */
