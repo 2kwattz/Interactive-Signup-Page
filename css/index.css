@@ -32,7 +32,7 @@ body::before {
     z-index: -1;
     background-image:
         linear-gradient(to bottom, #0094e978, #4d837c85),
-        url("./img/background.jpg");
+        url("../img/background.jpg");
     background-size: contain;
     background-position: center;
     height: 100vh;
